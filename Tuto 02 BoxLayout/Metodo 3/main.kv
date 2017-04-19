@@ -1,0 +1,52 @@
+<Box01>:
+    padding: 10
+    spacing: 10
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<BoxRed>:
+    padding: 10
+    spacing: 10
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 1,0,0
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxBlue:
+        size_hint: 1,None
+        heigth: 30
+    BoxBlue:
+    BoxGreen:
+
+<BoxGreen>:
+    padding: 10
+    spacing: 10
+    canvas:
+        Color:
+            rgb: 0,1,0
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxBlue:
+        size_hint: None,1
+        width: 30
+    BoxBlue:
+    BoxBlue:
+    BoxBlue:
+    BoxBlue:
+
+<BoxBlue>:
+    padding: 10
+    spacing: 10
+    canvas:
+        Color:
+            rgb: 0,0,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
