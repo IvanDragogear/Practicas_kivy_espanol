@@ -1,0 +1,27 @@
+# AnchorLayout
+# anchor_x: 'right','center','left'
+# anchor_y: 'top','center','bottom'
+
+<Wid_Alfa>:
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    AnchorLayout:
+        size_hint: None,None
+        size: 350,150
+        anchor_x: 'right'
+        anchor_y: 'top'
+        canvas:
+            Color:
+                rgb: 1,0,0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Button:
+            size_hint: None,None
+            size: 100,50
+            text: 'AnchorLayout'
