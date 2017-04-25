@@ -1,0 +1,47 @@
+<Wid_Alfa>:
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Button:
+        size_hint: 0.08,None
+        height: self.width
+        pos_hint: {'x':0.1,'y':0.25}
+        text: "Up"
+    Button:
+        size_hint: 0.08,None
+        height: self.width
+        pos_hint: {'x':0.1,'y':0.00}
+        text: "Down"
+    Button:
+        size_hint: 0.08,None
+        height: self.width
+        pos_hint: {'x':0.0,'y':0.13}
+        text: "<-"
+    Button:
+        size_hint: 0.08,None
+        height: self.width
+        pos_hint: {'x':0.2,'y':0.13}
+        text: "->"
+
+    FloatLayout:
+        size_hint: None,None
+        size: 400,400
+        pos: 200,100
+        canvas:
+            Color:
+                rgb: 1,0,0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Button:
+            size_hint: 0.3,0.1
+            pos_hint: {'x':0.4,'y':0.9}
+            text: "Start"
+        Button:
+            size_hint: None,None
+            size: 100, 50
+            pos: 600,200
+            text: "select"

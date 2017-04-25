@@ -1,0 +1,40 @@
+<Wid_Alfa>:
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    RelativeLayout:
+        size_hint: None,None
+        size: 200,200
+        pos: 50,200
+        canvas:
+            Color:
+                rgb: 1,0,0
+            Rectangle:
+                size: self.size
+                pos: 0,0
+        Button:
+            size_hint: None,None
+            size: 100,30
+            pos: 50,50
+            text: "RelativeLayout"
+
+    FloatLayout:
+        size_hint: None,None
+        size: 200,200
+        pos: 300,200
+        canvas:
+            Color:
+                rgb: 0,0,1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Button:
+            size_hint: None,None
+            size: 100,30
+            pos: 50,50
+            text: "FloatLayout"
+

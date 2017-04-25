@@ -15,10 +15,10 @@ from kivent_core.systems.gamesystem import GameSystem
 
 from Configuracion import Animatron
 
-class MyAnimationSystem(GameSystem):
+class Sis_Animacion(GameSystem):
 	None
 
-Factory.register('MyAnimationSystem', cls=MyAnimationSystem)
+Factory.register('Sis_Animacion', cls=Sis_Animacion)
 
 class MotorJuego(Widget):
 	L_KEYS = []
