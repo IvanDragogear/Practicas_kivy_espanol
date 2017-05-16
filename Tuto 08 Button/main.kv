@@ -1,0 +1,23 @@
+<Wid_BoxPy>:
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 1,0,0
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<Wid_BoxKv>:
+    orientation: "vertical"
+    id: BoxKv
+    canvas:
+        Color:
+            rgb: 0,0,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Button:
+        text: "Agregar Kv"
+        on_press: BoxKv.add_btn()
+
+

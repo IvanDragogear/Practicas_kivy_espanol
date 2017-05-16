@@ -1,0 +1,60 @@
+# Atributos de Label
+# text: Permite escribir un mensaje en forma de cadena
+# color: Coloca color en formato (r,g,b)
+# font_size: Permite asignar el tamaño de la fuente
+# text_size: Delimita el tamaño en el que se renderiza el texto (x,y)
+# valign: Alineación vertical en función del text_size
+# halign: Alineación horizontal en función del text_size
+# bold: Letras negritas True o False
+# underline: Linea de bajo de texto True o False, requiere SDL2
+# strikethrough: Lienea a medio texto True o False, requiere SDL2
+# italic: Letras italicas Ture o False, no funciona con todas las fuentes
+# font_name: Nombre de la fuente o url relativa
+# max_lines: Cantidad maxima de lineas que puede escribir
+# self.texture_size devuelve el tamaño de la textura del texto
+
+<Wid_Alfa>:
+    orientation: 'vertical'
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+        canvas:
+            Color:
+                rgb: .5,.5,1
+            Rectangle:
+                size:self.size
+                pos: self.pos
+    Label:
+        text: 'Hola Mundo'
+        color: 0,0,0
+        font_size: 50
+        #font_name: 'FreeMono'
+        bold: True
+        italic: True
+        text_size: 800,250
+        valign: 'center'
+        halign: 'center'
+        canvas.before:
+            Color:
+                rgb: .5,1,.5
+            Rectangle:
+                size:self.size
+                pos: self.pos
+    BoxLayout:
+        canvas:
+            Color:
+                rgb: .5,.5,1
+            Rectangle:
+                size:self.size
+                pos: self.pos
+
+
+
+
+
+
+
