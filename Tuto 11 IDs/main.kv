@@ -1,0 +1,70 @@
+# id, self, root, app, widgewt.ids['']
+<Wid_Animales>:
+    id: Animales
+    wid1: dragon
+    wid2: mono
+    orientation: 'vertical'
+    canvas:
+        Color:
+            rgb: 1,1,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Button:
+        id: dragon
+        text: 'Dragon'
+        on_press: print self.text
+    Button:
+        id: tigre
+        text: 'Tigre'
+        on_press: print Animales.nombre
+    Button:
+        id: cangrejo
+        text: 'Cangrejo'
+        on_press: print root.nombre
+    Button:
+        id: leon
+        text: 'Leon'
+        on_press: print gato.text
+    Button:
+        id: escarbajo
+        text: 'Escarabajo'
+    Button:
+        id: perro
+        text: 'Perro'
+        on_press: print kiwy.text
+    Button:
+        id: loro
+        text: 'Loro'
+        on_press: print kiwy.text
+    Button:
+        id: kiwy
+        text: 'Kiwy_Animal'
+        on_press: print frutas.ids['manzana'].text
+    Button:
+        id: mono
+        text: 'Mono'
+        on_press: root.Accion()
+    BoxLayout:
+        Button:
+            id: gato
+            text: 'Gato'
+            on_press: print root.nombre
+        Button:
+            id: mosca
+            text: 'Mosca'
+            on_press: print app.title
+    Wid_Frutas:
+        id: frutas
+
+
+
+<Wid_Frutas>:
+    Button:
+        id: manzana
+        text: 'Manzana'
+        on_press: print root.nombre
+    Button:
+        id: kiwy
+        text: 'Kiwy_Frutas'
+        on_press: print app.title

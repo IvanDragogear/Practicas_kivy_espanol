@@ -1,0 +1,29 @@
+<Wid_Alfa>:
+    id: Alfa
+    orientation: 'vertical'
+    padding: [10,10,10,10]
+    canvas:
+        Color:
+            rgb: self.V_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Label:
+        font_size: Alfa.V_size
+        bold: Alfa.V_bold
+        text: 'Font size: '+str(Alfa.V_size)
+    Button:
+        text: Alfa.V_texto
+        on_press: Alfa.cambiarTexto()
+    Button:
+        text: 'Cambiar color'
+        on_press: Alfa.cambiarColor()
+    Button:
+        text: 'Sumar'
+        on_press: Alfa.V_size += 5
+    Button:
+        text: 'Negritas'
+        on_press: Alfa.V_bold = not Alfa.V_bold
+
+
+
