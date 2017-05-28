@@ -1,0 +1,46 @@
+**Instalar buildozer 
+-Pagina de documentación y descarga de Buildozer:
+https://github.com/kivy/buildozer
+
+-Instalar via pip:
+sudo pip install buildozer
+
+**Como contruir un APK
+1.-Mueve la carpeta a un lugar cerca de la carpeta home para garantizar el buen funcionamiento de bulldozer.
+
+2.-Dentro de la carpeta que contiene el proyecto ejecuta:
+buildozer init
+
+3.-Se creara un archivo buildozer.spec el cual debes modificar según los requerimientos de tu aplicación.
+
+4.-Una ves listo el buildozer.spec ejecuta:
+	buildozer -v android debug  #Para pruebas
+	buildozer -v android release #Para ventas
+
+5.- Si no hay errores se creara un apk dentro de la carpeta bin en la ubicación de tu aplicación, este apk esta listo para ser instalado en dispositivos android.
+
+
+********************************************************************************
+**Para hacer depuración desde terminal:
+-Instala adb, (Android Debug Bridge)
+sudo apt-get install android-tools-adb android-tools-fastboot
+
+-ADB
+adb logcat #Te muestra todo el log de tu dispositivo
+adb logcat -s "python" #Filtra el log
+adb devices #Te muestra los dispositivo conectados
+
+-En caso de no permissions
+	sudo adb kill-server
+	sudo adb start-server
+
+********************************************************************************
+**Eliminar circulo rojo en kivy:
+from kivy.config import Config
+Config.set('input', 'mouse', 'mouse,multitouch_on_demand') #Para desactivar
+Config.set('input', 'mouse', 'mouse') #Para activar
+
+**Desactivar pantalla de configuraciones:
+-En clase que hereda de App sobre-escribe;
+def open_settings(*args):
+    pass

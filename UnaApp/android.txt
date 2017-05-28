@@ -1,0 +1,3 @@
+title=Una App
+author=Ivan Dragogear
+orientation=portrait
