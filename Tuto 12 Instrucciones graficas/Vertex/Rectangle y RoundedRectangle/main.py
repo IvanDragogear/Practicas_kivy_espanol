@@ -8,7 +8,7 @@ class Wid_Alfa(BoxLayout):
 	pass
 	
 class MainApp(App):
-	title = 'Instrucciones canvas desde fichero python'
+	title = 'Vertex Rectangle'
 	def build(self):
 		return Wid_Alfa()
 		

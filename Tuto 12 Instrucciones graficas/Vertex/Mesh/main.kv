@@ -1,0 +1,20 @@
+<WidAlfa>:
+    canvas:
+        Color:
+            rgb: [.5,.5,.5]
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgb:[1,1,1]
+        Mesh:
+            vertices: root.LVertices
+            indices: [0,1,2,0,2,3,0,3,4,0,4,1]
+            mode:'triangle'
+            source: 'calabaza.png'
+    Button:
+        size_hint: None,None
+        size: 100,100
+        pos: 0,0
+        text: "Mover"
+        on_press: root.MoverImagen()
