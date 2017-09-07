@@ -1,0 +1,28 @@
+<MyButton1@Button>:
+    background_normal: "Imagenes/Boton_azul.png"
+    background_down:"Imagenes/Boton_azul.png"
+    bold: True
+    font_size: self.width/10
+
+<WidStyle1>:
+    canvas:
+        Color:
+            rgb: .01,.01,.2
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:  # Esta BoxLayout funciona como separador
+        size_hint: .2,1
+    BoxLayout:
+        orientation: 'vertical'
+        MyButton1:
+            text: 'Estilo 1'
+            on_press: app.root.change_style(1)
+        MyButton1:
+            text: 'Estilo 2'
+            on_press: app.root.change_style(2)
+        MyButton1:
+            text: 'Estilo 3'
+            on_press: app.root.change_style(3)
+    BoxLayout:  # Esta BoxLayout funciona como separador
+        size_hint: .2,1
