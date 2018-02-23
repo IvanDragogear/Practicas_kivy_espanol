@@ -1,0 +1,59 @@
+<UnaScreen>:
+    name: "screen_c"
+    BoxLayout:
+        orientation: "vertical"
+        canvas:
+            Color:
+                rgb: [0,0,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Screen C"
+        Button:
+            text: "A"
+            on_press: root.manager.current = "screen_a"
+        Button:
+            text: "B"
+            on_press: root.manager.current = "screen_b"
+        
+<MainWid>:
+    Screen:
+        name: "screen_a"
+        BoxLayout:
+            orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: [1,0,0]
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                text: "Screen A"
+            Button:
+                text: "B"
+                on_press: root.current = "screen_b"
+            Button:
+                text: "C"
+                on_press: root.current = "screen_c"
+    Screen:
+        name: "screen_b"
+        BoxLayout:
+            orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: [0,1,0]
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                text: "Screen B"
+            Button:
+                text: "A"
+                on_press: root.current = "screen_a"
+            Button:
+                text: "C"
+                on_press: root.current = "screen_c"
+    UnaScreen:
+            
+                    

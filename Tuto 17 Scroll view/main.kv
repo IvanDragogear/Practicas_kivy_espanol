@@ -1,0 +1,17 @@
+<MainWid>:
+    BoxLayout:
+        ScrollView:
+            GridLayout:
+                id: container_y
+                size_hint_y: None
+                cols: 1
+                row_default_height: root.height*0.2
+                height: self.minimum_height
+    BoxLayout:
+        ScrollView:
+            GridLayout:
+                id: container_x
+                size_hint_x: None
+                rows: 1
+                col_default_width: root.width*0.2
+                width: self.minimum_width
