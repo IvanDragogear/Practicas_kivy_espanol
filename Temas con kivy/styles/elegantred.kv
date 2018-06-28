@@ -1,0 +1,97 @@
+#: import imgs styles.collection
+
+<Header>:
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 1,0, 0
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    padding: 5,5,5,5
+
+<Body>:
+    orientation: "vertical"
+    padding: 10
+    canvas:
+        Color:
+            rgb: 0.2, 0.2, 0.2
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    
+<Footer>:
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 0.1, 0.1, 0.1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    padding: 5,5,5,5
+    
+#: import imgs styles.collection
+
+<Container>:
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 0.15, 0.15, 0.15
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            
+    
+<Btn>:
+    border: 0,0,0,0
+    background_normal: imgs.transparency
+    background_down: imgs.shadow40
+    bold: True
+    canvas.before:
+        Color:
+            rgb: 0.4, 0.4, 0.4
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
+    
+<BtnWarning>:
+    border: 0,0,0,0
+    background_normal: imgs.transparency
+    background_down: imgs.shadow40
+    bold: True
+    canvas.before:
+        Color:
+            rgb: 1, 0, 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+<Separator>:
+    size_hint_y: 0.001
+    canvas:
+        Color:
+            rgb: 1, .8, 0
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<Paragraph>:
+    padding: 10
+    text: ""
+    Label:
+        text: root.text
+        text_size: self.size
+        halign: "left"
+        valign: "top"
+    
+<Title1>:
+    halign: "center"
+    valign: "middle"
+    bold: True
+    font_size: self.height*0.5
+    
+<Title2>:
+    halign: "center"
+    valign: "middle"
+    bold: True

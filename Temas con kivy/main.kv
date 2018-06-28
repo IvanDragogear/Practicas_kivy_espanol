@@ -1,0 +1,28 @@
+#:include styles/elegantred.kv
+
+<MainWid>
+    orientation: "vertical"
+    Header:
+        size_hint_y: 0.1
+        Title1:
+            text: root.title
+    Body:
+        size_hint_y: 0.8
+        BoxLayout
+            size_hint_y: 0.2
+            Title2:
+                text: root.subtitle
+        Container:
+            Paragraph:
+                text: root.text
+            
+    Separator:
+    Footer:
+        size_hint_y: 0.1
+        BoxLayout:
+            spacing:4
+            Btn:
+                text: "Botón"
+            BtnWarning:
+                text: "Botón"
+    
